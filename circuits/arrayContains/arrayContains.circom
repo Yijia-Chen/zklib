@@ -1,7 +1,7 @@
 pragma circom 2.0.0;
 
-template ArrayContains() {
-    signal input array[10];
+template ArrayContains(len) {
+    signal input array[len];
     signal input element;
     signal output out;
 
@@ -14,4 +14,4 @@ template ArrayContains() {
     out === 1;
 }
 
-component main = ArrayContains();
+component main = ArrayContains(10);

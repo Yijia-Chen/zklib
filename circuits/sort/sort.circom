@@ -4,14 +4,13 @@ include "../arrayEquals/arrayEquals.circom";
 /*************************** WARNING ***************************/
 /* Sort is still work in progress. It DOES NOT WORK as of now. */
 
-template Sort() {
-    var len = 16;
+template Sort(len) {
     signal input array[len];
     signal input sorted[len];
     signal output out;
 
     var result = mergeSort(array, len);
-    component equals = ArrayEquals();
+    component equals = ArrayEquals(len);
     equals.in[0] = sorted;
     equals.in[1] = result;
 
@@ -62,4 +61,4 @@ function merge(left, right, lenL, lenR) {
     return merged;
 }
 
-component main = Sort();
+component main = Sort(16);

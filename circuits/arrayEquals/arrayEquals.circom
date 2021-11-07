@@ -1,7 +1,6 @@
 pragma circom 2.0.0;
 
-template ArrayEquals() {
-    var len = 16;
+template ArrayEquals(len) {
     signal input a1[len];
     signal input a2[len];
     signal output out;
@@ -15,4 +14,4 @@ template ArrayEquals() {
     out === 1;
 }
 
-// component main = ArrayEquals();
+// component main = ArrayEquals(16);

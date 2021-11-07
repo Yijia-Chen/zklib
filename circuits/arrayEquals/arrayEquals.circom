@@ -14,4 +14,4 @@ template ArrayEquals(len) {
     out === 1;
 }
 
-// component main = ArrayEquals(16);
+component main = ArrayEquals(16);

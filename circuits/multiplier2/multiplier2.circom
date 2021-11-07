@@ -6,10 +6,6 @@ template Multiplier2() {
     signal input prod;
     signal output out;
 
-    // component eq = IsEqual();
-    // eq.in[0] <-- prod;
-    // eq.in[1] <-- a*b;
-
     out <-- a*b == prod;
     out === 1;
 }

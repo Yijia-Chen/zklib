@@ -11,3 +11,6 @@ node_modules
 **/public.json
 **/verification_key.json
 *.wtns
+
+# playground
+circuits/playground

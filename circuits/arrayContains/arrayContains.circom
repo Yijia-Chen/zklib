@@ -7,10 +7,10 @@ template ArrayContains() {
 
     var equals = 0;
     for (var i = 0; i < 10; i++) {
-        equals = equals + (array[i] == element);
+        equals += (array[i] == element);
     }
 
-    out <-- equals >= 1;
+    out <-- (equals >= 1);
     out === 1;
 }
 

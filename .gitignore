@@ -1,0 +1,13 @@
+# packages
+node_modules
+
+# generated files
+*_js
+*.zkey
+*.r1cs
+*.sym
+*_final.ptau
+**/proof.json
+**/public.json
+**/verification_key.json
+**.wtns
